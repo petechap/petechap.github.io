@@ -1,13 +1,14 @@
 <html>
     <head>
-        <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/dygraph/1.1.1/dygraph-combined.js"></script>
+        <script type="text/javascript" src="dygraph-combined.js"></script>
     </head>
     <body>
-    <div id="graphdiv">x</div>
+    <div id="graphdiv" style="width:100%"></div>
     <script type="text/javascript">
       g = new Dygraph(document.getElementById("graphdiv"), "http://petechap.github.io/data.csv",
               { rollPeriod: 10,
-                 showRoller: true});
+                 showRoller: true,
+                 errorBars: true});
       </script>
 
     </body>
